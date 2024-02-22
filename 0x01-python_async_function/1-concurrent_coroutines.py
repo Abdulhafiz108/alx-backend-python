@@ -14,7 +14,7 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
 
     async def wait_and_add_delay(delay):
         """
-        Helper function to wait for a random delay and add it to the delays list
+        Helper function to wait for a random delay and add to the delays list
         """
         random_delay = await wait_random(max_delay)
         delays.append(random_delay)
